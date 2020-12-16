@@ -39,7 +39,7 @@ def kMeans(dataSet,k,distMean=distEclud,creatCent=randCent):
                     minDist=distJI
                     minIndex=j
             if clusterArray[i,0] !=minIndex:
-                clusterAlt==True
+                clusterAlt=True
             clusterArray[i,:]=minIndex,minDist**2
         for cent in range(k):
             ifInClust=dataSet[0,np.nonzero(clusterArray[:,0].A==cent)[0]]
